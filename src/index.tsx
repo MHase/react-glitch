@@ -1,6 +1,3 @@
-import { render } from "react-dom";
+import useGlitch from "./hooks/useGlitch";
 
-import App from "./App";
-
-const rootElement = document.getElementById("root");
-render(<App />, rootElement);
+export default useGlitch;

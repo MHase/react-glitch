@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import glitch_exec, { GlitchExec } from "../glitch/glitch-execute";
+import glitch_exec, { GlitchExec } from "../lib/glitch-execute";
 
 const useGlitch = (glitchsCount = 1) => {
   const [glitchObjects, setGlitchObjects] = useState<GlitchExec[] | [null]>([

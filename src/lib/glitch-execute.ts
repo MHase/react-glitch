@@ -129,6 +129,7 @@ const glitch_exec: GlitchExec = {
             canvas.style.left = otg.left;
           },
           proxy: false, // we have to disable it, because by default html2canvas uses its own proxy which returns 500 - another way it to set up our own proxy
+          // moreover right now use-glitch supports only self-hosted images and enabling proxy breaks whole hook if user provides external image
         });
       }
     };

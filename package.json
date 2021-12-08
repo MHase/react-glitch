@@ -1,31 +1,22 @@
 {
-  "name": "react-glitch",
+  "name": "use-glitch",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
+  "repository": "github:mhase/use-glitch",
+  "bugs": "https://github.com/MHase/react-glitch/issues",
+  "author": "Maciej Sykuła <maciek.sykula@gmail.com>",
+  "keywords": [
+    "react",
+    "react hook",
+    "glitch hook",
+    "useglitch",
+    "use-glitch",
+    "glitch",
+    "glitch effect",
+    "effect",
+    "glitch animation",
+    "animation"
+  ],
   "license": "MIT",
-  "main": "src/index.tsx",
-  "dependencies": {
-    "html2canvas": "^1.3.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-scripts": "4.0.3"
-  },
-  "devDependencies": {
-    "@types/react": "17.0.20",
-    "@types/react-dom": "17.0.9",
-    "typescript": "4.4.2"
-  },
-  "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "main": "src/index.tsx"
 }
