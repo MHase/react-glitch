@@ -1,5 +1,5 @@
-import glitch from "../lib/glitch-lib";
-import { getRandomInt } from "../lib/utils";
+import glitch from "./glitch-lib";
+import { getRandomInt } from "./utils";
 
 export interface GlitchExec {
   NR_OF_GLITCHED_CANVASES: number;
@@ -45,7 +45,7 @@ const glitch_exec: GlitchExec = {
   glitched_canvases: [],
   curr_canvas: null,
 
-  object_to_glitch: document.body,
+  object_to_glitch: undefined,
 
   __state_machine: (gl) => {
     const otg = gl.object_to_glitch;
@@ -138,8 +138,6 @@ const glitch_exec: GlitchExec = {
   get start() {
     return (obj_to_glitch: GlitchExec["object_to_glitch"]) => {
       const gl = this;
-
-      console.log("started");
 
       // if obj_to_glitch is defined then assing, if not it will take default document.body
       if (obj_to_glitch) {
